@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gem tur</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+        *{
+            margin:0;
+            padding:0;
+            font-family: "Nunito Sans", sans-serif;
+        }
+        body{
+            height:100%;
+            width:100%;
+        }
+        #content{
+            height: 100%;
+            width:100%;
+            overflow:hidden;
+        }
+        #top{
+            background:#ecf0f1;
+            height:50px;
+            width:100%;
+            display:flex;
+        }
+        #top span{
+            margin:15px 20px;
+        }
+        #top-btns{
+            margin:0 auto;
+        }
+        #top-btns button{
+            margin-top:10px;
+            margin-left:30px;
+            padding:5px 30px;
+            border:1px solid #bdc3c7;
+            border-radius: 10px;
+        }
+        #header{
+            height: 100px;
+            width: 100%;
+            border-bottom:2px solid #bdc3c7;
+            padding:0 100px;
+            display:flex;
+        }
+        #logo{
+            height: 100px;
+        }
+        #navbar{
+            list-style: none;
+            margin-left: 400px;
+            margin-top:30px;
+        }
+        #navbar li{
+            display:inline;
+            margin-left:40px;
+        }
+        #navbar li a{
+             color:#465051;
+             font-size:24px;
+             text-decoration: none;
+        }
+        #headbottom{
+            height:600px;
+            width:100%;
+            background: url("gemi manzara.jpg");
+            background-size: cover;
+            padding:100px 0;
+        }
+        #inner{
+            background:rgba(0,0,0,0.7);
+            height:300px;
+            width:700px;
+            margin:0 auto;
+            text-align: center;
+            padding:10px 0;
+        }
+        .txt{
+            color:#fff;
+            font-size:20px;
+        }
+        #inner h1{
+            color:#fff;
+        }
+        #myform{
+            margin-top:50px;
+        }
+        .inp{
+            width:200px;
+            height:30px;
+            margin-left:20px;
+            font-size:16px;
+            transition: 0.4s;
+        }
+        .inp:hover{
+            box-shadow: 0 0 4pt 2pt #D3D3D3;
+            outline-width: 0px;
+        }
+        .inp:focus{
+            box-shadow: 0 0 4pt 2pt #D3D3D3;
+            outline-width: 0px;
+        }
+        .sbm{
+            width:200px;
+            height:30px;
+            background:#bdc3c7;
+            color:#000;
+            font-size:18px;
+            cursor: pointer;
+            border:none;
+        }
+        #kampanyalar{
+        width:85%;
+        height:100%;
+        text-align: center;
+        margin: 0 auto;
+       }
+       #kampanyalar h1{
+        margin-top:50px;
+         color:#162b60;
+       }
+       #kampanyalar a{
+            text-decoration: none;
+            background:#162b60;
+            color:#fff;
+            padding:15px 30px;
+            transition: 0.4s;
+        }
+        #kampanyalar a:hover{
+            background:#284387;
+        }
+        #kampanyaörn{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin:100px 0;
+        }
+        .kampanya1{
+            width:425px;
+            height:400px;
+            margin:0 20px;
+            -webkit-box-shadow: 2px 1px 23px -7px rgba(0,0,0,0.66);
+            -moz-box-shadow: 2px 1px 23px -7px rgba(0,0,0,0.66);
+            box-shadow: 2px 1px 23px -7px rgba(0,0,0,0.66);
+        }
+        .kampanya1 img{
+            width:100%;
+            height:225px;
+        }
+        #seoContent{
+            padding:20px 20px;  
+        }
+        #sosyalmedya{
+            width:100%;
+            height:50px;
+            background: #465051;
+            padding-top:15px;
+        }
+        #sosyalmedya a{
+            color:#fff;
+            text-decoration: none;
+            margin-left:20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div id="top">
+            <span>GEM TUR SEYAHAT ACENTESİ</span>
+            <div id="top-btns">
+                <button>Satış Ofislerimiz</button>
+                <button>0850 999 99 99</button>
+                <button>Giriş Yap</button>
+            </div>
+        </div>
+        <div id="header">
+            <img src="gem tour.jpg" id="logo">
+                <ul id="navbar">
+                    <li><a href="#">Otel</a></li>
+                    <li><a href="#">Tur</a></li>
+                    <li><a href="#">Erken Rezervasyon</a></li>
+                    <li><a href="#">Kampanyalar</a></li>
+                </ul>
+        </div>
+        <div id="headbottom">
+            <div id="inner">
+                <h1>Gemi Turları</h1>
+                <form action="#" id="myform" onsubmit="return kontrol()">
+                    <span class="txt">Nereden</span>
+                    <input type="text" id="nereden" class="inp"><br><br>
+                    <span class="txt">Nereye</span>
+                    <input type="text" id="nereye" class="inp"><br><br>
+                    <span class="txt">Tarih</span>
+                    <input type="date" class="inp"><br><br>
+                    <input type="submit" class="sbm" value="Ara">
+                </form>
+            </div>
+        </div>
+        <div id="kampanyalar">
+            <h1>Turlar</h1>
+            <div id="kampanyaörn">
+                <div class="kampanya1">
+                    <img src="kampanya1.jpg" alt="">
+                    <div class="cruise">
+                        <h2>Akdeniz Turları</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque commodi facilis id necessitatibus placeat incidunt nihil delectus at alias fuga.
+                        </p>   
+                    </div>
+                </div>
+                <div class="kampanya1">
+                    <img src="kampanya2.jpg" alt="">
+                    <div class="cruise">
+                        <h2>Karayip Adaları Turları</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis facilis et odio quisquam itaque a sapiente amet soluta, optio expedita!</p>
+                    </div>
+                </div>
+                <div class="kampanya1">
+                    <img src="kampanya3.jpg" alt="">
+                    <div class="cruise">
+                        <h2>Yunan Adaları Turları</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatibus nam dolorem aliquam. Quos enim mollitia ipsa quam dolorum quisquam!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="kampanyalar">
+            
+            <div id="kampanyaörn">
+                <div class="kampanya1">
+                    <img src="kampanya1.jpg" alt="">
+                    <div class="cruise">
+                        <h2>Norveç Fiyortları Turları</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque commodi facilis id necessitatibus placeat incidunt nihil delectus at alias fuga.
+                        </p>   
+                    </div>
+                </div>
+                <div class="kampanya1">
+                    <img src="kampanya2.jpg" alt="">
+                    <div class="cruise">
+                        <h2>İtalya Turları</h2>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis facilis et odio quisquam itaque a sapiente amet soluta, optio expedita!</p>
+                    </div>
+                </div>
+                <div class="kampanya1">
+                    <img src="kampanya3.jpg" alt="">
+                    <div class="cruise">
+                        <h2>Nehir Turları</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatibus nam dolorem aliquam. Quos enim mollitia ipsa quam dolorum quisquam!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="footer-seo-content content_visibility_auto" id="seoContent">
+        <h2>Gemi Cruise Turu</h2>
+                    <p><p>Seyahat etmeyi sevenlerin yeni g&ouml;zdesi olan gemi turlar&#305;, masmavi deniz &uuml;zerinde d&uuml;nyay&#305; gezmeyi sa&#287;l&#305;yor. A&ccedil;&#305;k denizde farkl&#305; seyahat rotalar&#305; ile tatil yapmaya dayanan gemi cruise turlar&#305; ile birden fazla &uuml;lkeyi ziyaret edebilir, denizin huzur verici atmosferinde dinlenmenin keyfini s&uuml;rebilirsiniz.</p>
+
+    <h3><strong>Gemi Turlar&#305;</strong></h3>
+
+    <p>D&uuml;nyay&#305; gezmek, farkl&#305; &uuml;lkeler g&ouml;rmek ve denizin keyfini &ccedil;&#305;karmak isteyen tatilciler i&ccedil;in gemi turu, ideal bir se&ccedil;enek oluyor. Hem yurt i&ccedil;inden hem de yurt d&#305;&#351;&#305;ndan ba&#351;lay&#305;p farkl&#305; &uuml;lkeleri ve k&uuml;lt&uuml;rleri tan&#305;ma f&#305;rsat&#305; sunan turlar; Singapur, Karayipler, Akdeniz &uuml;lkeleri, Moskova veya G&uuml;neydo&#287;u Asya gibi co&#287;rafyalara d&uuml;zenleniyor. Turlar hareket saatinden u&ccedil;u&#351; planlar&#305;na kadar her t&uuml;rl&uuml; detay&#305; kapsad&#305;&#287;&#305; i&ccedil;in planlama ve ula&#351;&#305;m sorunu olmadan seyahat etmeyi m&uuml;mk&uuml;n k&#305;l&#305;yor. G&uuml;ne&#351; ve deniz e&#351;li&#287;inde konforlu bir seyahat f&#305;rsat&#305; sunarak, tatilcilerin zahmetsizce d&uuml;nyay&#305; g&ouml;rmesini sa&#287;l&#305;yor.</p>
+
+    <h4><strong>Gemi Turlar&#305; Fiyatlar&#305;</strong></h4>
+
+    <p>Gemi turu fiyatlar&#305;, yurt i&ccedil;inden vizeli ve <a href="/vizesiz-gemi-cruise-turlari">vizesiz&nbsp; gemi turlar&#305;</a> olarak d&uuml;zenlenen turun hizmet kapsam&#305;na ba&#287;l&#305; oluyor. Ziyaret edilecek rotalar&#305;n uzakl&#305;&#287;&#305;na ve kapsam&#305;na ba&#287;l&#305; olarak fiyat alan turlar gemide ve otellerde konaklama s&uuml;resi, ikramlar, rehberlik servisleri, liman ve havaalan&#305; vergileri gibi harcamalara ba&#287;l&#305; olarak de&#287;i&#351;iyor. &Ouml;zellikle yurt d&#305;&#351;&#305; seyahatlerinde uzun konaklama s&uuml;resi ile dinlenmeye ve farkl&#305; k&uuml;lt&uuml;rleri tan&#305;maya f&#305;rsat veren turlar&#305; inceleyebilir, cruise gemi turlar&#305; d&acirc;hilinde sunulan hizmetleri &ouml;&#287;renebilirsiniz.</p>
+
+    <h4><strong>Ucuz Gemi Turlar&#305;</strong></h4>
+
+    <p>Ucuz gemi turlar&#305;, Akdeniz &uuml;lkelerinden ba&#351;layarak &ccedil;e&#351;itli rotalara d&uuml;zenleniyor. U&ccedil;akl&#305; turlar ile ilk &ouml;nce belirlenen hareket noktas&#305;na, ard&#305;nda da gemiye ula&#351;&#305;larak ba&#351;layan turlar; &#304;talya, &#304;spanya, Fransa, Milano limanlar&#305;n&#305; gezerek tatilcilere uygun bir gezi plan&#305; sunuyor. Ayn&#305; zamanda ucuz gemi turlar&#305;, denizde seyir ile t&uuml;m g&uuml;n denizin keyfini &ccedil;&#305;karmaya ve gemi aktivitelerinden yararlanmaya f&#305;rsat veriyor. Gemi ikramlar&#305; ve animasyon g&ouml;sterileri ile limana yana&#351;&#305;lmayan g&uuml;nlerde bile e&#287;lencenin keyfini s&uuml;rebilirsiniz. Tur kapsam&#305;ndaki hizmetlerin yan&#305; s&#305;ra liman ve havaalan&#305; vergilerini kapsayan turlarda herhangi bir formalite ile u&#287;ra&#351;madan tatil yapabilirsiniz.</p>
+
+    <h4><strong>&#304;stanbul &Ccedil;&#305;k&#305;&#351;l&#305; Gemi Turlar&#305;</strong></h4>
+
+    <p>Yurt i&ccedil;inden d&uuml;zenlenen gemi turlar&#305; genellikle &#304;stanbul liman&#305;ndan hareket ediyor ve &#304;stanbul &ccedil;&#305;k&#305;&#351;l&#305; gemi turlar&#305; gidilecek rotaya g&ouml;re de&#287;i&#351;iyor. &#304;stanbul Akdeniz turlar&#305;; Cenova, Roma, Marsilya gibi limanlar&#305; gezerek b&ouml;lgenin &uuml;nl&uuml; &#351;ehirlerini ziyaret etmeyi sa&#287;l&#305;yor. Ayr&#305;ca Akdeniz &uuml;zerinden &#304;spanya gemi turlar&#305; ile Akdeniz k&uuml;lt&uuml;r&uuml;n&uuml; ya&#351;atan farkl&#305; &uuml;lkeleri g&ouml;rme olana&#287;&#305; veriyor. Moskova &uuml;zerinde d&uuml;zenlenen seferler ise masals&#305; bir tatil yapman&#305;z&#305; sa&#287;larken &ccedil;evre gezileri ve &#351;ehir turlar&#305; ile tatilinize renk ve hareket katman&#305;z m&uuml;mk&uuml;n oluyor. Deniz turlar&#305;n&#305;n yan&#305; s&#305;ra &#304;stanbul &ccedil;&#305;k&#305;&#351;l&#305; turlarda Ren ve Tuna nehirleri &uuml;zerinden de seferler d&uuml;zenleniyor.</p>
+
+    <h4 class="mt-20 mb-10"><strong>Yunan Adalar&#305; Gemi Turlar&#305;</strong></h4>
+
+    <p>Akdeniz gemi turlar&#305; kapsam&#305;nda bulunan Yunan adalar&#305; gemi turlar&#305;; Akdeniz&rsquo;deki Patmos, Girit, Santorini, Atina, Mykonos gibi limanlar&#305; geziyor. T&uuml;rkiye &ccedil;&#305;k&#305;&#351;l&#305; cruise turlar&#305; aras&#305;nda yer alan turlarda Akdeniz&rsquo;in masmavi sular&#305;n&#305;n keyfini &ccedil;&#305;karabilirsiniz. Turlar&#305;n rehberler e&#351;li&#287;inde d&uuml;zenledi&#287;i &ccedil;evre gezileri ile Yunan k&uuml;lt&uuml;r&uuml;n&uuml; tan&#305;yabilir, g&uuml;n g&uuml;n detayl&#305;ca d&uuml;zenlenen turlar ile keyifli bir tatil yapabilirsiniz. Ayn&#305; zamanda vize hizmetlerinin tur kapsam&#305;nda yer al&#305;p almad&#305;&#287;&#305;n&#305; &ouml;&#287;renerek yolculu&#287;unuzla ilgili planlar&#305; yapabilir, ada turlar&#305;nda erken rezervasyon tur f&#305;rsatlar&#305;n&#305; de&#287;erlendirebilirsiniz.</p>
+
+    <p><a href="/erken-rezervasyon-turlari">Erken rezervasyon turlar&#305;</a> aras&#305;nda yer alan f&#305;rsatlar&#305; takip ederek, indirimli fiyatlar ile istedi&#287;inzi turu sat&#305;n alabilirsiniz.</p>
+    </p>
+    </div>
+    <div id="sosyalmedya">
+        <a href=""><i class="fa-brands fa-facebook amblem"></i></a>
+        <a href=""><i class="fa-brands fa-square-instagram amblem"></i></a>
+        <a href=""><i class="fa-brands fa-twitter amblem"></i></a>
+        <a href=""><i class="fa-solid fa-phone amblem "></i></a>
+        <a href=""class="amblem">0000000</a>
+
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" integrity="sha512-GWzVrcGlo0TxTRvz9ttioyYJ+Wwk9Ck0G81D+eO63BaqHaJ3YZX9wuqjwgfcV/MrB2PhaVX9DkYVhbFpStnqpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        function kontrol(){
+            if($("#nereden").val().length<3 || $("#nereye").val().length<3){
+                alert("Nereden veya nereye kısımları 3 karakterden kısa olamaz");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
